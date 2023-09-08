@@ -673,6 +673,7 @@ body {
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn {
@@ -698,16 +699,16 @@ body {
 .close-btn:hover,
 .close-btn:focus{
   background-color: #404bbf;
+  border: none; 
 }
 
 .close-btn-icon{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover + .close-btn-icon,
-.close-btn:focus + .close-btn-icon{
-  fill: #fff;
-  stroke: #fff;
+.close-btn:hover > .close-btn-icon,
+.close-btn:focus > .close-btn-icon{
+  fill: #fff; 
 }
 
 .contact-info-wrapper{
@@ -738,6 +739,7 @@ body {
   line-height: 116.667%;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
+  line-height: 1.17;
 }
 
 .contact-input {
@@ -747,6 +749,7 @@ body {
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
 }
 
 .contact-input:focus {
