@@ -520,6 +520,7 @@ body {
   align-items: center;
   max-width: 220px;
   gap: 16px;
+  margin-right: 80px;
 }
 
 .social-footer-title {
@@ -564,6 +565,69 @@ body {
 .social-footer-item {
   width: 40px;
   height: 40px;
+}
+
+.subscribe-form{
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe-p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--NAVY-BLUE, #2e2f42);
+  padding-left: 16px;
+  margin-right: 24px;
+  color: #fff;
+}
+
+.subscribe-input::placeholder {
+  color: var(--WHITE, #fff);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  letter-spacing: 0.04em;
+}
+
+.subscribe-btn {
+  color: #fff;
+  background-color: #4d5ae5;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.04em;
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus{
+  background-color: #31d0aa;
+}
+
+.subscribe-icon{
+  margin-left: 16px;
 }
 
 .backdrop {
@@ -742,7 +806,7 @@ body {
 
 .contact-info-submit {
   display: inline-flex;
-  
+
   color: #fff;
   padding: 16px 32px;
   align-items: flex-start;
